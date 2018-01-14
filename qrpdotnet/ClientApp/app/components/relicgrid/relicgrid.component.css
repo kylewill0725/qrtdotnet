@@ -1,0 +1,11 @@
+.relic-grid {
+    padding: 5px;
+    width: 100%;
+}
+
+.relic-grid__row {
+    display: grid;
+    grid-template-columns: auto 9em 7em;
+    font-size: 2vw;
+    font-weight: bold;
+}

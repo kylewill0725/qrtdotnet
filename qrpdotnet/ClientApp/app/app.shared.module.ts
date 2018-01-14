@@ -9,6 +9,9 @@ import { NavMenuComponent } from './components/navmenu/navmenu.component';
 import { HomeComponent } from './components/home/home.component';
 import { FetchDataComponent } from './components/fetchdata/fetchdata.component';
 import { CounterComponent } from './components/counter/counter.component';
+import { RelicTrackerComponent } from './components/relictracker/relictracker.component';
+import { RelicGridComponent } from './components/relicgrid/relicgrid.component';
+import { RelicRowComponent } from './components/relicrowrenderer/relicrow.component';
 
 @NgModule({
     declarations: [
@@ -16,7 +19,10 @@ import { CounterComponent } from './components/counter/counter.component';
         NavMenuComponent,
         CounterComponent,
         FetchDataComponent,
-        HomeComponent
+        HomeComponent,
+        RelicTrackerComponent,
+        RelicGridComponent,
+        RelicRowComponent
     ],
     imports: [
         CommonModule,
@@ -27,6 +33,7 @@ import { CounterComponent } from './components/counter/counter.component';
             { path: 'home', component: HomeComponent },
             { path: 'counter', component: CounterComponent },
             { path: 'fetch-data', component: FetchDataComponent },
+            { path: 'rt', component: RelicTrackerComponent },
             { path: '**', redirectTo: 'home' }
         ])
     ]

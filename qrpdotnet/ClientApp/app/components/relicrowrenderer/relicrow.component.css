@@ -1,0 +1,5 @@
+﻿.relic-row {
+    display: grid;
+    grid-template-columns: auto 9em 7em;
+    font-size: 2vw;
+}
